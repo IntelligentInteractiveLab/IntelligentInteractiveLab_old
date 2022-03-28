@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Common</title>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 引用自己的库 -->
+	<link rel="stylesheet" href="../../resource/css/cite.css">
+	<script src="../../resource/js/cite.js"></script>
+	<link rel="shortcut icon" href="../../img/eeg-icon.svg">
+
+	<!-- 3.6.0最新 -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+	<!-- bootstrap 4.6.0 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+	<!-- tocbot 4.12.3 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
+	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+
+</head>
+
+<nav class="site-header sticky-top py-1" style="background-color: #007BFF;">
+	<div class="container d-flex flex-column flex-md-row justify-content-between">
+		<a class="py-2" href="../../index.html" aria-label="回到主页">
+			<img src="../../resource/img/school-icon.png" style="display:block;width:24px;height:24px" />
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+				stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+				viewBox="0 0 24 24" focusable="false">
+				<title>回到主页</title>
+				<circle cx="12" cy="12" r="10"></circle>
+				<path
+					d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+				</path>
+			</svg> -->
+		</a>
+		<a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
+		<a class="py-2 d-none d-md-inline-block" href="readme.html">Description</a>
+		<a class="py-2 d-none d-md-inline-block" href="download.html">Download</a>
+	</div>
+</nav>
+
+<body style="font-family: '微软雅黑';">
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+
+			</div>
+			<div class="col-8 js-toc-content">
+				
+			</div>
+			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
+				<div id="toc-container" class="post-toc">
+					<div class="toc"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<hr>
+	<footer class="blockquote text-center">
+		<dir class="row">
+			<div class="col-md-12 ">
+				<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
+
+				<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+						style="display: inline-block">LastYear</div></small>
+			</div>
+		</dir>
+	</footer>
+</body>
+<script language="javascript" type="text/javascript">
+	add_head_id();
+
+	tocify();
+	footer_year();
+</script>
+
+</html>

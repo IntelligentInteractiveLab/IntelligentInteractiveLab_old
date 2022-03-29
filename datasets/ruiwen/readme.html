@@ -70,28 +70,36 @@
 				<h2 style="color: #1293EE; ">
 					Stimuli and Experiment
 				</h2>
-				Audio EEG Emotion Database is an emotional EEG Database that induces subjects to produce confused and non-confused emotions 
+				Audio EEG Emotion Database is an emotional EEG Database that induces subjects to produce confused and
+				non-confused emotions
 				through different types of Audios, and collects corresponding EEG signals.
 				The experimental paradigm used in this database is shown in the Fig:
 				<br>
-				<img src="./resource/img/流程图.jpg" style="max-width: 800px;">
+				<img src="./resource/img/流程图.jpg" class="img-fluid">
+				
 				<br>
 				<br>
-				Subjects in each experiment need to listen to some audios, each section of the audio recording for a trial, 
-				before the start of each trial first present the fixation point, it reminds the subjects that an audio is about to be played.
-				 The audio starts playing 1 second after the fixation point appears. Then the subjects began to answer questions, 
-				 answer this question time is set to 5 second, After the subjects answered the questions or lasted more than 5 seconds, 
-				 the next trial began. According to the content of audio, it can be divided into word experiment, 
-				 sentence experiment and paragraph experiment. 
+				Subjects in each experiment need to listen to some audios, each section of the audio recording for a
+				trial,
+				before the start of each trial first present the fixation point, it reminds the subjects that an audio
+				is about to be played.
+				The audio starts playing 1 second after the fixation point appears. Then the subjects began to answer
+				questions,
+				answer this question time is set to 5 second, After the subjects answered the questions or lasted more
+				than 5 seconds,
+				the next trial began. According to the content of audio, it can be divided into word experiment,
+				sentence experiment and paragraph experiment.
 				<br>
 				<br>
 				<h2 style="color: #1293EE;">
 					Subjects
 				</h2>
-				34 subjects’ EEG data were recorded in the database, but one of them had a problem with the data label, 
-				so there were only 13 subjects is valid data. Their ages ranged from 21 to 35 years old (Mean=24.5, Standard Deviation=3.84),
-				including 5 males and 8 females. All the subjects have bachelor’s degree or above, including 3 undergraduate students, 
-				7 master’s degree students and 3 doctor’s degree students. All the subjects are right-handed, 
+				34 subjects’ EEG data were recorded in the database, but one of them had a problem with the data label,
+				so there were only 13 subjects is valid data. Their ages ranged from 21 to 35 years old (Mean=24.5,
+				Standard Deviation=3.84),
+				including 5 males and 8 females. All the subjects have bachelor’s degree or above, including 3
+				undergraduate students,
+				7 master’s degree students and 3 doctor’s degree students. All the subjects are right-handed,
 				without intellectual or hearing impairment, and all of them are Chinese.
 				<br>
 				<br>
@@ -99,18 +107,21 @@
 					Dataset Summary
 				</h2>
 				The Dataset consists of two parts:
-				In the "Preprocessed_EEG" folder, there are files that contain downsampled, preprocessed and segmented versions of the EEG data in MATLAB (.mat file). 
-				The data was downsampled to 200 Hz. A bandpass frequency filter from 0 - 75 Hz was applied. 
-				We extracted the EEG segments that correspond to the duration of each movie. 
-				There were a total of 45 files with the extention .mat (MATLAB files), one per experiment. 
-				Each subject performed the experiment three times with an interval of approximately one week. 
-				Each subject file contains 16 arrays. Fifteen arrays contain segmented preprocessed EEG data of 15 trials in one experiment (eeg_1~eeg_15, channel×data). 
-				Array name labels contain the label of the corresponding emotional labels (-1 for negative, 0 for neutral and +1 for positive). 
-				The detailed order of the channels is included in the dataset. 
+				In the "Preprocessed_EEG" folder, there are files that contain downsampled, preprocessed and segmented
+				versions of the EEG data in MATLAB (.mat file).
+				The data was downsampled to 200 Hz. A bandpass frequency filter from 0 - 75 Hz was applied.
+				We extracted the EEG segments that correspond to the duration of each movie.
+				There were a total of 45 files with the extention .mat (MATLAB files), one per experiment.
+				Each subject performed the experiment three times with an interval of approximately one week.
+				Each subject file contains 16 arrays. Fifteen arrays contain segmented preprocessed EEG data of 15
+				trials in one experiment (eeg_1~eeg_15, channel×data).
+				Array name labels contain the label of the corresponding emotional labels (-1 for negative, 0 for
+				neutral and +1 for positive).
+				The detailed order of the channels is included in the dataset.
 				The EEG cap according to the international 10 - 20 system for 8 channels is shown below:
 				<br>
 				<br>
-				<img src="./resource/img/10-20system.png" />
+				<img src="./resource/img/10-20system.png" class="img-fluid" />
 				<br>
 				<br>
 				<h2 style="color: #1293EE;">

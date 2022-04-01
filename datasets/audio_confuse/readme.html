@@ -110,12 +110,30 @@
 				其中EEG中存放了三段txt文件，命名为subject_id-1.txt, subject_id-2.txt, subject_id-3.txt, 1.txt是在做单词音频诱发实验时采集的脑电数据，2.txt和3.txt是句子和段落做诱发实验时采集到的脑电数据。
 				在txt文件中，前6行记录本次采集的相关信息，包括采样率相关内容，第7行开始正式记录脑电数据，每行脑电记录有11列，第1列是采样索引，最后一列是时间戳，倒数第二列是标记该时间点有无事件发生。如果是25120
 				表示发生了新事件。2-9列是记录的Fp1、Fp2、C3、C4、T5、T6、O1、O2八通道的脑电信号。通道位置符合下图所示10-20国际标准导联系统。</br>
-				E-prime文件夹下有有个子文件，分别是：wordExp-subject_id-1.txt，wordExp-subject_id-1.edat2，sentExp-subject_id-2.txt，sentExp-subject_id-2.edat2，
+				E-prime文件夹下有6个子文件，分别是：wordExp-subject_id-1.txt，wordExp-subject_id-1.edat2，sentExp-subject_id-2.txt，sentExp-subject_id-2.edat2，
 				paraExp-subject_id-3.txt，paraExp-subject_id-3.edat2，分别记录了受试者在回答不同问题时的回答情况。.edat2文件和.txt文件区别在于.edat2文件
 				是记录的原始文件，只能通过E-prime软件直接打开，但是查看相关信息更直观，.txt打开方便但是不方便查看相关信息。通过每条回答下边Options.RESP、Options.CRESP和Options.ACC三个属性
 				可以确定对该段脑电信号记录的标签。其中Options.RESP是受试者回答的选项，Options.CRESP是正确答案的选项，Options.ACC是这道题受试者有没有回答正确。如果受试者回答正确，则该段脑电信号被标记为unconfused,
 				否则标记为confused。由于在每次实验开始前，受试者会被要求进行一段时间的冥想，这段时间的脑电记录被标记为calm。</br>
-				在质询文件夹下同样有三个文件，分别是subject_id-表格-单词质询，subject_id-文档-单句质询，subject_id-文档-段落质询，分别表示用于诱发受试者情绪的相关质询内容和顺序。
+				在质询文件夹下同样有三个文件，分别是subject_id-表格-单词质询.xlsx，subject_id-文档-单句质询.docx，subject_id-文档-段落质询.docx，分别表示用于诱发受试者情绪的相关质询内容和顺序。</br>
+				总体文件结构如下所示：</br>
+				Audio_Confuse_Dataset</br>
+				└─</br>
+				├─EEG</br>
+				├─subject_id-1.txt</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-2.txt</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-3.txt</br>
+				├─E-prime</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.txt</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.edat2</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.txt</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.edat2</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.txt</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.edat2</br>
+				├─质询</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-表格-单词质询.docx</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-单句质询.docx</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-段落质询.docx</br>
 				<br>
 				<br>
 				<img src="./resource/img/10-20system.png" class="img-fluid"/>

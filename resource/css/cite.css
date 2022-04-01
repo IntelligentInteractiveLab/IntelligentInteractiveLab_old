@@ -1,27 +1,31 @@
-.container {
+/* .container {
 	max-width: 960px;
-}
+} */
 
 /*
-   * Custom translucent site header
-   */
-
+* Custom translucent site header
+*/
 .site-header {
-	background-color: rgba(0, 0, 0, .85);
+	background-color: #B4C6E7;
 	/* rgba(0, 0, 0, .85)  #d3d3d3*/
+	font-family: '微软雅黑';
+	font-size: 20px;
+	color: #333;
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	backdrop-filter: saturate(180%) blur(20px);
 }
 
 .site-header a {
-	color: #999;
+	color: #333;
 	/* #999  #333*/
 	transition: ease-in-out color .15s;
 }
 
-.site-header a:hover {
-	color: #fff;
-	text-decoration: none;
+#navbarsExample08 li {
+	margin-left: 70px;
+	margin-right: 70px;
+	border-style: none;
+	font-size: 20px;
 }
 
 .carousel-inner img {
@@ -37,8 +41,8 @@
 	height: 256px;
 	width: 180px;
 }
-/* Add toc's code 
 
+/* Add toc's code 
 ref: https://fuerain.ink/archives/handsome-modify-record.html#anchor-6
 */
 @media (min-width:1400px) {

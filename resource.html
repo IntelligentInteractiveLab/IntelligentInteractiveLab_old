@@ -1,80 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <title>资源</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="resource/css/cite.css">
-	<script src="resource/js/cite.js"></script>
 
-	<!-- Jquery 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
-
-</head>
-
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B4C6E7;">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-		aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-		<ul class="navbar-nav">
-			<li class="nav-item active" style="margin-left: 70px; margin-right: 70px;">
-				<a class="nav-link" href="index.html" aria-label="回到主页">
-					<img src="resource/img/nwpu.png" style="width:28px; height:28px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
-			<li class="nav-item" style="margin-left: 70px; margin-right: 70px;">
-				<a class="nav-link" href="index.html">关于我们</a>
-			</li>
-			<li class="nav-item" style="margin-left: 70px; margin-right: 70px;">
-				<a class="nav-link" href="research.html">研究领域</a>
-			</li>
-			<li class="nav-item" style="margin-left: 70px; margin-right: 70px;">
-				<a class="nav-link" href="member.html">人员组成</a>
-			</li>
-			<li class="nav-item" style="margin-left: 70px; margin-right: 70px;">
-				<a class="nav-link" href="resource.html">资源</a>
-			</li>
-			<!-- <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown"
-					aria-expanded="false">Dropdown</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown08">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li> -->
-		</ul>
-	</div>
-</nav>
+<script type="text/javascript" src="resource/js/_common/header.js"></script>
 
 <body style="font-family: '微软雅黑';">
 
-
 	<div class="container">
-
 		<div class="row">
 			<div class="col-2">
 			</div>
 			<div class="col-8 js-toc-content">
 				<!--data sets-->
 				<h2 id="datasets">数据集</h2>
-				
-				<table class="table table-responsive table-striped col-md-12" style="word-break:break-all; word-wrap:break-all;">
+				<table class="table table-responsive table-striped" style="word-break:break-all; word-wrap:break-all;">
 					<thead>
 						<tr>
 							<th scope="col">名称</th>
@@ -84,7 +24,6 @@
 					</thead>
 					<tbody>
 
-						<tr>
 						<tr scope="row">
 							<td>
 								<h3>Audio Confuse.zip</h3>(<a href="datasets/audio_confuse/index.html">数据集主页</a>)
@@ -92,19 +31,6 @@
 							<td>158MB</td>
 							<td>音频诱发的困惑情绪识别脑电数据集</td>
 						</tr>
-
-
-						<tr>
-
-						<tr scope="row">
-							<td>
-								<h3>RuiwenEEG.zip</h3>(<a href="datasets/ruiwen/index.html">数据集主页</a>)
-							</td>
-							<td>1.8GB</td>
-							<td>瑞文实验诱发的情绪识别多模态数据集</td>
-						</tr>
-						
-						<tr>
 
 						<tr scope="row">
 							<td>
@@ -114,7 +40,14 @@
 							<td>瑞文实验诱发的情绪识别脑电数据集</td>
 						</tr>
 
-						
+						<tr scope="row">
+							<td>
+								<h3>RuiwenEEG.zip</h3>(<a href="datasets/ruiwen/index.html">数据集主页</a>)
+							</td>
+							<td>1.8GB</td>
+							<td>瑞文实验诱发的情绪识别多模态数据集</td>
+						</tr>
+
 						<tr scope="row">
 							<td>
 								<h3>RavenGaze</h3>(<a href="datasets/RavenGaze/index.html">数据集主页</a>)
@@ -122,7 +55,6 @@
 							<td>1.8GB</td>
 							<td>瑞文实验诱发的注视估计数据集</td>
 						</tr>
-
 					</tbody>
 				</table>
 				<!--datasets End-->
@@ -161,10 +93,8 @@
 							January until the end of the month.
 						</p>
 					</li>
-
 				</ul>
 				<!--tutorial End-->
-
 				<br><br>
 				<!--links-->
 				<h2 id="links">链接</h2>
@@ -175,44 +105,21 @@
 					<li><a href="http://edu.snnu.edu.cn/" target="_blank">陕西师范大学教育学部</a> </li>
 					<li><a href="https://teacher.nwpu.edu.cn/xutao.html" target="_blank">徐韬主页</a> </li>
 					<!-- <li><a href="http://edu.snnu.edu.cn/info/1109/3242.htm" target="_blank">周筠主页</a> </li> -->
-
 				</ul>
 				<br><br><br><br>
 				<!--links End-->
 			</div>
 
-
 			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
 				<div id="toc-container" class="post-toc">
-
 					<div class="toc">
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
-
-	<hr>
-	<footer class="blockquote text-center">
-		<dir class="row">
-			<div class="col-md-12 ">
-				<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-				<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-						style="display: inline-block">LastYear</div></small>
-			</div>
-		</dir>
-	</footer>
+	<script type="text/javascript" src="resource/js/_common/footer.js"></script>
 </body>
-
-<script language="javascript" type="text/javascript">
-	add_head_id();
-	add_head_id("td,li");
-
-	tocify();
-
-	footer_year();
-</script>
 
 </html>

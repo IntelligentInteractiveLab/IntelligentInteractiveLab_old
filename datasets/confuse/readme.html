@@ -70,44 +70,52 @@
 				<h2 style="color: #1293EE; ">
 					Stimuli and Experiment
 				</h2>
-				Audio EEG Emotion Database is an emotional EEG Database that induces subjects to produce confused and non-confused emotions 
-				through different types of Audios, and collects corresponding EEG signals.
-				The experimental paradigm used in this database is shown in the Fig:
+
 				<br>
 				<img src="./resource/img/流程图.jpg" class="img-fluid"">
 				<br>
 				<br>
-				Subjects in each experiment need to listen to some audios, each section of the audio recording for a trial, 
-				before the start of each trial first present the fixation point, it reminds the subjects that an audio is about to be played.
-				 The audio starts playing 1 second after the fixation point appears. Then the subjects began to answer questions, 
-				 answer this question time is set to 5 second, After the subjects answered the questions or lasted more than 5 seconds, 
-				 the next trial began. According to the content of audio, it can be divided into word experiment, 
-				 sentence experiment and paragraph experiment. 
+				The experiment system comprises three parts: EEG collector, confusion inducer, and data storage, as shown in Figure.3.
+				 We employed OpenBCI as the EEG collector in this work, due to its lowcost, high-quality bio-sensing hardware for brain-computer interfacing. 
+				 It has eight channels (Fp1, Fp2, C3, C4, T5, T6, O1, O2) and a high sample rate (250Hz) at an affordable price, 
+				 providing the possibility of large-scale collection of EEG signals in learning study and application. We use one desktop to induce confused states 
+				 and a laptop to connect with the EEG collector and store the data.We used E-prime ,
+				 a software for behavioral and psychological research, to generate the stimuli materials and interaction.
+				It also sent trigger signals for segmenting trials. We redeveloped the firmware and software of the OpenBCI Cyton Board, 
+				making it receive the trigger signals from DB25. When storing the data, the EEG waves were real-time sync visualized. 
+				This visualization helps testers monitor the experiment.
+				<br>
+				<br>
+				<img src="./resource/img/fig3.jpg" class="img-fluid"">
 				<br>
 				<br>
 				<h2 style="color: #1293EE;">
 					Subjects
 				</h2>
-				34 subjects’ EEG data were recorded in the database, but one of them had a problem with the data label, 
-				so there were only 13 subjects is valid data. Their ages ranged from 21 to 35 years old (Mean=24.5, Standard Deviation=3.84),
-				including 5 males and 8 females. All the subjects have bachelor’s degree or above, including 3 undergraduate students, 
-				7 master’s degree students and 3 doctor’s degree students. All the subjects are right-handed, 
-				without intellectual or hearing impairment, and all of them are Chinese.
+				A total of 25 subjects participated in this experiment. 
+				We obtained 23 subjects’ data because the unexpected equipment problem made failed collecting for two persons. 
+				The ages were between 20 and 47 (Mean = 24.48, SD = 6.36); the male to female ratio is roughly half to half (12:11). 
+				The education backgrounds covered middle school, undergraduate, master, and doctoral degrees, 
+				and the major included computer science, microelectronics, bioengineering, 
+				and British and American literature. All participants were in good health and had normal vision without any history of brain injury or mental illness.
+				Before the experiment, each subject signed an ultimate consent form. 
+				Then, the experiment testers would explain the experiment’s purpose, process, 
+				and precautions and inform subjects that it will not cause any harm. As shown in Figure, 
+				we first presented the manipulation instruction. When subjects were ready, 
+				they watched ten non-confused scene pictures, each of which lasted ten seconds.
+				Next to this, they viewed and performed 48 tests, each of which 
+				lasted a maximum of 15 seconds. Finally, the subjects filled out the questionnaires.
 				<br>
 				<br>
 				<h2 style="color: #1293EE;">
 					Dataset Summary
 				</h2>
-				The Dataset consists of two parts:
-				In the "Preprocessed_EEG" folder, there are files that contain downsampled, preprocessed and segmented versions of the EEG data in MATLAB (.mat file). 
-				The data was downsampled to 200 Hz. A bandpass frequency filter from 0 - 75 Hz was applied. 
-				We extracted the EEG segments that correspond to the duration of each movie. 
-				There were a total of 45 files with the extention .mat (MATLAB files), one per experiment. 
-				Each subject performed the experiment three times with an interval of approximately one week. 
-				Each subject file contains 16 arrays. Fifteen arrays contain segmented preprocessed EEG data of 15 trials in one experiment (eeg_1~eeg_15, channel×data). 
-				Array name labels contain the label of the corresponding emotional labels (-1 for negative, 0 for neutral and +1 for positive). 
-				The detailed order of the channels is included in the dataset. 
+				The Dataset consists  23 subject' data(failed subject 1 and subject 6), and each subject has 49 files.
+				There are five labels, confused,non-confused,guess,think-right and rest. And the data labeled undefined is wasted.
+				The data sample rate is 250Hz.
+
 				The EEG cap according to the international 10 - 20 system for 8 channels is shown below:
+				"Fp1", "Fp2", "C3", "C4", "T5", "T6", "O1", "O2"
 				<br>
 				<br>
 				<img src="./resource/img/10-20system.png" class="img-fluid"/>

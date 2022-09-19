@@ -134,7 +134,7 @@ body {
 .news-i {
     height: auto;
     width: 100%;
-    padding: 13.5px 20px;
+    padding: 5px 20px;
     display: inline-block;
 }
 
@@ -161,6 +161,7 @@ a.news-link-i:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
+    /* min-width: 100%; */
     /* margin-right: 70px; */
 }
 

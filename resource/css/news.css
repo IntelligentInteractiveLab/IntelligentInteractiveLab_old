@@ -1,6 +1,7 @@
-.main-news{
+.main-news {
     min-width: 100%;
 }
+
 .news-item {
     width: calc(100% - 40px);
     height: 120px;
@@ -11,10 +12,10 @@
 }
 
 .news-img {
-    max-width: 162px;
-    max-height: 120px;
+    width: 162px;
+    height: 90px;
     justify-content: flex-start;
-    
+
 }
 
 .news {
@@ -23,7 +24,7 @@
     height: 120px;
 }
 
-.news-time{
+.news-time {
     float: right;
     font-size: 14px;
     color: #999;
@@ -31,8 +32,13 @@
 
 .news-title {
     font-size: 18px;
+    width: 640px;
+    height: 30px;
     color: #333;
     text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .news-contentOverflow {

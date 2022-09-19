@@ -5,74 +5,228 @@
 /*
 * Custom translucent site header
 */
+
+div {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    max-width: 100%;
+    margin: 0 auto;
+    position: static;
+    /*固定logo和menu*/
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+}
+
+/* 导航条 */
 .site-header {
-	background-color: #B4C6E7;
-	/* rgba(0, 0, 0, .85)  #d3d3d3*/
-	font-family: '微软雅黑';
-	font-size: 20px;
-	color: #333;
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgb(3, 75, 185);
+    /* rgba(0, 0, 0, .85)  #d3d3d3*/
+    font-family: '微软雅黑';
+    font-size: 20px;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    height: 30px;
+    display: inline-block;
 }
 
 .site-header a {
-	color: #333;
-	/* #999  #333*/
-	transition: ease-in-out color .15s;
+    /* #999  #333*/
+    transition: ease-in-out color .15s;
 }
 
 #navbarsExample08 li {
-	margin-left: 70px;
-	margin-right: 70px;
-	border-style: none;
-	font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    display: inline-block;
 }
 
+/* 页面 */
+.page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    /* overflow: hidden; */
+}
+
+/* 轮播图 */
 .carousel-inner img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .js-toc-content h3 {
-	font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 .avatar {
-	height: 256px;
-	width: 180px;
+    height: 256px;
+    width: 180px;
+}
+
+.main {
+    max-width: 100%;
+    height: 259px;
+    margin: 40px 0 0 0;
+    /* display: flex; */
+    padding-bottom: 50px;
+}
+
+/* card */
+.card-top {
+    background-color: #fff;
+    border-bottom: 2px dashed rgb(3, 75, 185);
+    height: 40px;
+    display: inline flex;
+    overflow: hidden;
+}
+
+.card-tit {
+    color: rgb(3, 75, 185);
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+
+.learnMore {
+    justify-content: flex-end;
+    color: #666;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-right: 11px;
+    float: right;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.brief {
+    display: flex;
+    color: #666;
+    font-size: 14px;
+    margin: 6.5px 0;
+}
+
+.news-i {
+    height: auto;
+    width: 100%;
+    padding: 13.5px 20px;
+    display: inline-block;
+}
+
+.news-item-i {
+    color: #666;
+    font-size: 14px;
+    margin: 6.5px 0;
+}
+
+.news-link-i {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: #666;
+}
+
+a.news-link-i:hover {
+    text-decoration: none;
+}
+
+.news-title-i {
+    justify-content: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    /* margin-right: 70px; */
+}
+
+.news-time-i {
+    justify-content: flex-start;
+    width: 150px;
+    float: right;
+}
+
+/* footer */
+.bottomPage {
+    width: 100%;
+    max-width: 100%;
+    height: 157px;
+    background-color: #333;
+
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+.bottomContent {
+    margin-bottom: 10px;
+    line-height: 40px;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactInfo {
+    margin-left: 100px;
 }
 
 /* Add toc's code 
 ref: https://fuerain.ink/archives/handsome-modify-record.html#anchor-6
 */
 @media (min-width:1400px) {
-	.post-toc-content {
-		position: relative;
-		z-index: 100;
-		width: 100%;
-		margin-right: auto !important;
-		margin-left: auto !important;
-		text-align: right;
-	}
+    .post-toc-content {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        text-align: right;
+    }
 
-	.post-toc {
-		margin-left: 10px;
-		border-left: 1px solid rgba(221, 221, 221, 0.32);
-		/* font-size: 12px; */
-		position: fixed;
-		z-index: 0;
-		top: 80px;
-		display: inline-block;
-		text-align: left;
-		padding-left: 10px;
-		/* overflow-y: hidden; */
-	}
+    .post-toc {
+        margin-left: 10px;
+        border-left: 1px solid rgba(221, 221, 221, 0.32);
+        /* font-size: 12px; */
+        position: fixed;
+        z-index: 0;
+        top: 80px;
+        display: inline-block;
+        text-align: left;
+        padding-left: 10px;
+        /* overflow-y: hidden; */
+    }
 }
 
 @media (max-width:1400px) {
-	.post-toc {
-		display: none;
-	}
+    .post-toc {
+        display: none;
+    }
 }
 
 /* Add toc's code */

@@ -1,264 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
-<title>人员</title>
+<title>智能交互Lab</title>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="resource/css/cite.css">
-	<script src="resource/js/cite.js"></script>
-	<link rel="shortcut icon" href="resource/img/eeg-icon-black.svg">
+    <!-- 引用自己的库 -->
+    <link rel="stylesheet" href="resource/css/cite.css">
+    <link rel="stylesheet" href="resource/css/member.css">
+    <script src="resource/js/cite.js"></script>
+    <link rel="shortcut icon" href="resource/img/eeg-icon-black.svg">
 
-	<!-- 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- 3.6.0最新 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
 
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+    <!-- tocbot 4.12.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
 
 </head>
 
 
-<nav class="navbar navbar-expand-lg navbar-light site-header" style="background-color: #B4C6E7;">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-		aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+<body style="font-family: '微软雅黑';background-color: rgb(245,247,255);">
 
-	<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-		<ul class="navbar-nav">
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="index.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="resource/img/nwpu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
+    <div class="page">
+        <div class="top">
+            <div class="logo">
+                <img src="resource/img/logo.png" alt="智能感知交互实验室">
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-expand-lg navbar-light site-header">
 
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="research.html">研究领域</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="member.html">人员组成</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="resource.html">资源</a>
-			</li>
-			<!-- <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown"
-					aria-expanded="false">Dropdown</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown08">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li> -->
-		</ul>
-	</div>
-</nav>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="index.html">新闻动态</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="research.html">研究领域</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="member.html">人员组成</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="resource.html">项目资源</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <br> -->
+        </div>
 
+        <div class="container" style="padding: 20px;">
+            <div class="team-item">
+                <div class="team-title">教师团队</div>
+                <div class="team-content">
+                    <div class="person-item-conten btn" style="cursor: pointer;">
+                        <a href="https://teacher.nwpu.edu.cn/xutao.html">
+                            <img src="resource/img/xt.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                            <div class="person-content" style="display: flex;">
+                                <div class="people">
+                                    <div style="margin-right: 20px;">徐韬</div>
+                                    <div>副教授</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-title">硕士研究生</div>
+                <div class="team-content">
+                    <div class="person-item-content">
+                        <img src="resource/img/dw.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 15px;">党旺</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 15px;">石慧萍</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 15px;">陈浩东</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 15px;">李瑞强</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 15px;">赵璇</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">曹志鹏</div>
+                                <div>2019级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">王佳宝</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">张高天</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">郭忠昌</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/lcy.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">李朝阳</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">白玉琼</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">朱雪楷</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">赵亮</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">周生龑</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">王锴贞</div>
+                                <div>2020级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">王旭</div>
+                                <div>2021级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">吴波</div>
+                                <div>2021级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">王璇</div>
+                                <div>2021级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">张江源</div>
+                                <div>2022级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/yhy.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">伊浩圆</div>
+                                <div>2022级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">张译</div>
+                                <div>2022级</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-item-content">
+                        <img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
+                        <div class="person-content" style="display: flex;">
+                            <div class="people">
+                                <div style="margin-right: 20px;">苏萌</div>
+                                <div>2022级</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-title">毕业成员及当前工作地点</div>
+                <div class="year-item">
+                    <div class="year-title">2019</div>
+                    <div class="year-content-item">
+                        <div class="year-content">
+                            党旺(华为)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="bottomPage">
+            <footer class="col-md-12">
+                <div class="bottomContent">
+                    <div class="contactInfo">
+                        <p>邮箱：xutao@nwpu.edu.cn</p>
+                        <p>地址：陕西省西安市西北工业大学（长安校区）软件学院 启祥楼4楼</p>
+                    </div>
+                    <div style="margin-right: 150px;text-align: center;">
+                        <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
 
+                        <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                                style="display: inline-block">LastYear
+                            </div></small>
+                    </div>
+                </div>
+                <div></div>
+            </footer>
+        </div>
+    </div>
 
-<body style="font-family: '微软雅黑';">
-
-
-	<div class="container">
-		<div class="row">
-
-			<div class="col-2">
-
-			</div>
-
-			<div class="col-8 js-toc-content">
-
-				<h2>教授</h2>
-				<h3>副教授</h3>
-				<div class="card" style="width: 14rem; display: inline-block">
-					<img src="resource/img/xt.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="https://xingstart.gitee.io/">徐韬</a></h5>
-					</div>
-					<div class="card-body">
-						<!-- <p class="card-text">西北工业大学软件学院副教授</p> -->
-						<p class="card-text">在国际期刊会议发表论文30余篇，主持国家自然基金，陕西省自然基金，国家重点实验室开放基金等多个项目。</p>
-					</div>
-				</div>
-
-				<h2>研究生</h2>
-				<h3>2019级</h3>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/dw.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">党旺</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">石慧萍</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">陈浩东</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">李瑞强</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">赵璇</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">曹志鹏</a></h5>
-					</div>
-				</div>
-				<h3>2020级</h3>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">王佳宝</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">张高天</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">郭忠昌</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/lcy.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="https://gitee.com/Mbaey">李朝阳</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">白玉琼</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">朱雪楷</a></h5>
-					</div>
-				</div>
-
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">赵亮</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">周生龑</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">王锴贞</a></h5>
-					</div>
-				</div>
-				<h3>2021级</h3>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">王旭</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">吴波</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">王璇</a></h5>
-					</div>
-				</div>
-
-				<h3>2022级</h3>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">张江源</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/male.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">伊浩圆</a></h5>
-					</div>
-				</div>
-				<div class="card" style="width: 11rem; display: inline-block">
-					<img src="resource/img/female.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-					<div class="card-header">
-						<h4 class="card-title"><a href="#">张译</a></h5>
-					</div>
-				</div>
-				<!-- <h3>2023级</h3>
-				<h3>2024级</h3> -->
-
-
-			</div>
-
-			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
-				<div id="toc-container" class="post-toc">
-					<div class="toc"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="blockquote text-center">
-	<dir class="row">
-		<div class="col-md-12 ">
-			<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-
-			<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-					style="display: inline-block">LastYear</div></small>
-		</div>
-	</dir>
-</footer>
 
 </body>
 
 <script language="javascript" type="text/javascript">
-	add_head_id();
+    add_head_id();
 
-	tocify();
+    tocify();
 
-	footer_year();
+    footer_year();
 </script>
+
 
 </html>

@@ -1,228 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>资源</title>
+<html lang="zh-CN">
+
+<title>智能交互Lab</title>
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="../../resource/css/cite.css">
-	<script src="../../resource/js/cite.js"></script>
-	<link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
+    <!-- 引用自己的库 -->
+    <link rel="stylesheet" href="resource/css/cite.css">
+    <script src="resource/js/cite.js"></script>
+    <link rel="shortcut icon" href="resource/img/eeg-icon-black.svg">
 
-	<!-- 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- 3.6.0最新 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+
+    <!-- tocbot 4.12.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
 
 </head>
 
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="font-family: '微软雅黑';background-color: rgb(245,247,255);">
 
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="resource/css/cite.css">
-	<script src="resource/js/cite.js"></script>
-	<link rel="shortcut icon" href="resource/img/eeg-icon-black.svg">
+    <div class="page">
+        <div class="top">
+            <div class="logo">
+                <img src="resource/img/logo.png" alt="智能感知交互实验室">
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-expand-lg navbar-light site-header">
 
-	<!-- 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="index.html">新闻动态</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="research.html">研究领域</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="member.html">人员组成</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="resource.html">项目资源</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <br> -->
+        </div>
 
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8 js-toc-content">
+                    <!--data sets-->
+                    <h2 id="datasets">数据集</h2>
+                    <table class="table table-responsive table-striped"
+                        style="word-break:break-all; word-wrap:break-all;">
+                        <thead>
+                            <tr>
+                                <th scope="col">名称</th>
+                                <th scope="col">大小</th>
+                                <th scope="col">描述</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr scope="row">
+                                <td>
+                                    <h3>Audio Confuse.zip</h3>(<a href="datasets/audio_confuse/index.html">数据集主页</a>)
+                                </td>
+                                <td>158MB</td>
+                                <td>音频诱发的困惑情绪识别脑电数据集</td>
+                            </tr>
+
+                            <tr scope="row">
+                                <td>
+                                    <h3>Confuse.zip</h3>(<a href="datasets/confuse/index.html">数据集主页</a>)
+                                </td>
+                                <td>1GB</td>
+                                <td>瑞文实验诱发的情绪识别脑电数据集</td>
+                            </tr>
+
+                            <tr scope="row">
+                                <td>
+                                    <h3>RuiwenEEG.zip</h3>(<a href="datasets/ruiwen/index.html">数据集主页</a>)
+                                </td>
+                                <td>1.8GB</td>
+                                <td>瑞文实验诱发的情绪识别多模态数据集</td>
+                            </tr>
+
+                            <tr scope="row">
+                                <td>
+                                    <h3>RavenGaze</h3>(<a href="datasets/RavenGaze/index.html">数据集主页</a>)
+                                </td>
+                                <td>6.9GB</td>
+                                <td>瑞文实验诱发的注视估计数据集</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--datasets End-->
+                    <!--tutorial sets-->
+                    <h2 id="tutorials">教程&课程</h2>
+                    <ul>
+                        <li>
+                            <h3><a target="_blank" href="#"><strong>[课程]</strong>Python程序设计</a></h3>
+                            <p>This course will provide a gentle, yet intense, introduction to
+                                programming using Python for highly motivated students with
+                                little or no prior experience in programming. The course will
+                                focus on planning and organizing programs, as well as the
+                                grammar of the Python programming language. The course is
+                                designed to help prepare students for 6.01 Introduction to EECS
+                                I. 6.01 assumes some knowledge of Python upon entering; the
+                                course material for 6.189 has been specially designed to make
+                                sure that concepts important to 6.01 are covered. This course is
+                                offered during the Independent Activities Period (IAP), which is
+                                a special 4-week term at MIT that runs from the first week of
+                                January until the end of the month.
+                            </p>
+                        </li>
+                        <li>
+                            <h3><a target="_blank" href="#"><strong>[课程]</strong>云计算基础</a></h3>
+                            <p>This course will provide a gentle, yet intense, introduction to
+                                programming using Python for highly motivated students with
+                                little or no prior experience in programming. The course will
+                                focus on planning and organizing programs, as well as the
+                                grammar of the Python programming language. The course is
+                                designed to help prepare students for 6.01 Introduction to EECS
+                                I. 6.01 assumes some knowledge of Python upon entering; the
+                                course material for 6.189 has been specially designed to make
+                                sure that concepts important to 6.01 are covered. This course is
+                                offered during the Independent Activities Period (IAP), which is
+                                a special 4-week term at MIT that runs from the first week of
+                                January until the end of the month.
+                            </p>
+                        </li>
+                    </ul>
+                    <!--tutorial End-->
+                    <br><br>
+                    <!--links-->
+                    <h2 id="links">链接</h2>
+                    <ul>
+                        <li><a href="http://www.nwpu.edu.cn/" target="_blank">西北工业大学</a> </li>
+                        <li><a href="http://www.snnu.edu.cn/" target="_blank">陕西师范大学</a> </li>
+                        <li><a href="http://ruanjian.nwpu.edu.cn/" target="_blank">西北工业大学软件学院</a> </li>
+                        <li><a href="http://edu.snnu.edu.cn/" target="_blank">陕西师范大学教育学部</a> </li>
+                        <li><a href="https://teacher.nwpu.edu.cn/xutao.html" target="_blank">徐韬主页</a> </li>
+                        <!-- <li><a href="http://edu.snnu.edu.cn/info/1109/3242.htm" target="_blank">周筠主页</a> </li> -->
+                    </ul>
+                    <br><br><br><br>
+                    <!--links End-->
+                </div>
+
+                <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
+                    <div id="toc-container" class="post-toc">
+                        <div class="toc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+        <div class="bottomPage">
+            <footer class="col-md-12">
+                <div class="bottomContent">
+                    <div class="contactInfo">
+                        <p>邮箱：xutao@nwpu.edu.cn</p>
+                        <p>地址：陕西省西安市西北工业大学（长安校区）软件学院 启祥楼4楼</p>
+                    </div>
+                    <div style="margin-right: 150px;text-align: center;">
+                        <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
 
-</head>
-
-
-<nav class="navbar navbar-expand-lg navbar-light site-header" style="background-color: #B4C6E7;">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-		aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-		<ul class="navbar-nav">
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="index.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="resource/img/nwpu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
-
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="research.html">研究领域</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="member.html">人员组成</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" >
-				<a class="nav-link" href="resource.html">资源</a>
-			</li>
-			<!-- <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown"
-					aria-expanded="false">Dropdown</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown08">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li> -->
-		</ul>
-	</div>
-</nav>
-
-
-
-
-<body style="font-family: '微软雅黑';">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
-			</div>
-			<div class="col-8 js-toc-content">
-				<!--data sets-->
-				<h2 id="datasets">数据集</h2>
-				<table class="table table-responsive table-striped" style="word-break:break-all; word-wrap:break-all;">
-					<thead>
-						<tr>
-							<th scope="col">名称</th>
-							<th scope="col">大小</th>
-							<th scope="col">描述</th>
-						</tr>
-					</thead>
-					<tbody>
-
-						<tr scope="row">
-							<td>
-								<h3>Audio Confuse.zip</h3>(<a href="datasets/audio_confuse/index.html">数据集主页</a>)
-							</td>
-							<td>158MB</td>
-							<td>音频诱发的困惑情绪识别脑电数据集</td>
-						</tr>
-
-						<tr scope="row">
-							<td>
-								<h3>Confuse.zip</h3>(<a href="datasets/confuse/index.html">数据集主页</a>)
-							</td>
-							<td>1GB</td>
-							<td>瑞文实验诱发的情绪识别脑电数据集</td>
-						</tr>
-
-						<tr scope="row">
-							<td>
-								<h3>RuiwenEEG.zip</h3>(<a href="datasets/ruiwen/index.html">数据集主页</a>)
-							</td>
-							<td>1.8GB</td>
-							<td>瑞文实验诱发的情绪识别多模态数据集</td>
-						</tr>
-
-						<tr scope="row">
-							<td>
-								<h3>RavenGaze</h3>(<a href="datasets/RavenGaze/index.html">数据集主页</a>)
-							</td>
-							<td>6.9GB</td>
-							<td>瑞文实验诱发的注视估计数据集</td>
-						</tr>
-					</tbody>
-				</table>
-				<!--datasets End-->
-				<!--tutorial sets-->
-				<h2 id="tutorials">教程&课程</h2>
-				<ul>
-					<li>
-						<h3><a target="_blank" href="#"><strong>[课程]</strong>Python程序设计</a></h3>
-						<p>This course will provide a gentle, yet intense, introduction to
-							programming using Python for highly motivated students with
-							little or no prior experience in programming. The course will
-							focus on planning and organizing programs, as well as the
-							grammar of the Python programming language. The course is
-							designed to help prepare students for 6.01 Introduction to EECS
-							I. 6.01 assumes some knowledge of Python upon entering; the
-							course material for 6.189 has been specially designed to make
-							sure that concepts important to 6.01 are covered. This course is
-							offered during the Independent Activities Period (IAP), which is
-							a special 4-week term at MIT that runs from the first week of
-							January until the end of the month.
-						</p>
-					</li>
-					<li>
-						<h3><a target="_blank" href="#"><strong>[课程]</strong>云计算基础</a></h3>
-						<p>This course will provide a gentle, yet intense, introduction to
-							programming using Python for highly motivated students with
-							little or no prior experience in programming. The course will
-							focus on planning and organizing programs, as well as the
-							grammar of the Python programming language. The course is
-							designed to help prepare students for 6.01 Introduction to EECS
-							I. 6.01 assumes some knowledge of Python upon entering; the
-							course material for 6.189 has been specially designed to make
-							sure that concepts important to 6.01 are covered. This course is
-							offered during the Independent Activities Period (IAP), which is
-							a special 4-week term at MIT that runs from the first week of
-							January until the end of the month.
-						</p>
-					</li>
-				</ul>
-				<!--tutorial End-->
-				<br><br>
-				<!--links-->
-				<h2 id="links">链接</h2>
-				<ul>
-					<li><a href="http://www.nwpu.edu.cn/" target="_blank">西北工业大学</a> </li>
-					<li><a href="http://www.snnu.edu.cn/" target="_blank">陕西师范大学</a> </li>
-					<li><a href="http://ruanjian.nwpu.edu.cn/" target="_blank">西北工业大学软件学院</a> </li>
-					<li><a href="http://edu.snnu.edu.cn/" target="_blank">陕西师范大学教育学部</a> </li>
-					<li><a href="https://teacher.nwpu.edu.cn/xutao.html" target="_blank">徐韬主页</a> </li>
-					<!-- <li><a href="http://edu.snnu.edu.cn/info/1109/3242.htm" target="_blank">周筠主页</a> </li> -->
-				</ul>
-				<br><br><br><br>
-				<!--links End-->
-			</div>
-
-			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
-				<div id="toc-container" class="post-toc">
-					<div class="toc">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="blockquote text-center">
-	<dir class="row">
-		<div class="col-md-12 ">
-			<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-
-			<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-					style="display: inline-block">LastYear</div></small>
-		</div>
-	</dir>
-</footer>
+                        <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                                style="display: inline-block">LastYear
+                            </div></small>
+                    </div>
+                </div>
+                <div></div>
+            </footer>
+        </div>
+    </div>
 
 </body>
 
 <script language="javascript" type="text/javascript">
-	add_head_id();
+    add_head_id();
 
-	tocify();
+    tocify();
 
-	footer_year();
+    footer_year();
 </script>
+
 
 </html>

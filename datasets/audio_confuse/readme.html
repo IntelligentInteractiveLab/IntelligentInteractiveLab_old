@@ -1,185 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <title>Description</title>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="../../resource/css/cite.css">
-	<script src="../../resource/js/cite.js"></script>
-	<link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
+    <!-- 引用自己的库 -->
+    <link rel="stylesheet" href="../../resource/css/cite.css">
+    <script src="../../resource/js/cite.js"></script>
+    <link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
 
-	<!-- 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- 3.6.0最新 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+
+    <!-- tocbot 4.12.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light site-header" style="background-color: #B4C6E7; ">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-		aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
 
-	<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-		<ul class="navbar-nav">
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="../../resource.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="../../resource/img/nwpu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
+<body style="font-family: '微软雅黑';background-color: rgb(245,247,255);">
 
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="index.html">Home</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="readme.html">Description</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="download.html">Download</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="../../resource.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="../../resource/img/snnu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+    <div class="page">
+        <div class="top">
+            <div class="logo">
+                <img src="../../resource/img/logo.png" alt="智能感知交互实验室">
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-expand-lg navbar-light site-header">
 
-<body style="font-family: '微软雅黑';">
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../index.html">首页</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../index.html">新闻动态</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../research.html">研究领域</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../member.html">人员组成</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../resource.html">项目资源</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <br> -->
+        </div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
 
-			</div>
-			<div class="col-8 js-toc-content" style="font-size: 1em;">
+                </div>
+                <div class="col-8 js-toc-content" style="font-size: 1em;">
 
-				<h2 style="color: #1293EE; ">
-					Stimuli and Experiment
-				</h2>
-				<!-- Audio EEG Emotion Database is an emotional EEG Database that induces subjects to produce confused and non-confused emotions 
+                    <h2 style="color: #1293EE; ">
+                        Stimuli and Experiment
+                    </h2>
+                    <!-- Audio EEG Emotion Database is an emotional EEG Database that induces subjects to produce confused and non-confused emotions 
 				through different types of Audios, and collects corresponding EEG signals.
 				The experimental paradigm used in this database is shown in the Fig: -->
-				音频脑电情绪数据库是通过不同类型的音频诱导被试产生困惑和非困惑情绪，并采集相应的脑电图信号的情绪脑电数据库。该数据库采用的实验范式如图所示:
-				<br>
-				<img src="./resource/img/experiment.gif" class="img-fluid"/>
-				<br>
-				<br>
-				<!-- Subjects in each experiment need to listen to some audios, each section of the audio recording for a trial, 
+                    音频脑电情绪数据库是通过不同类型的音频诱导被试产生困惑和非困惑情绪，并采集相应的脑电图信号的情绪脑电数据库。该数据库采用的实验范式如图所示:
+                    <br>
+                    <img src="./resource/img/experiment.gif" class="img-fluid" />
+                    <br>
+                    <br>
+                    <!-- Subjects in each experiment need to listen to some audios, each section of the audio recording for a trial, 
 				before the start of each trial first present the fixation point, it reminds the subjects that an audio is about to be played.
 				 The audio starts playing 1 second after the fixation point appears. Then the subjects began to answer questions, 
 				 answer this question time is set to 5 second, After the subjects answered the questions or lasted more than 5 seconds, 
 				 the next trial began. According to the content of audio, it can be divided into word experiment, 
 				 sentence experiment and paragraph experiment.  -->
-				 被试在每次实验中都需要听一些音频，每段音频对应着一次数据记录。在每次试验开始前，受试者需要进行一段时间的冥想以保持接下来的精力集中。
-				 实验开始之后，屏幕首先会呈现一个注视点，它提醒受试者有一段音频即将播放。音频在注视点出现1秒后开始播放。然后受试者开始根据音频内容回答问题，
-				 回答问题的时间设置为5秒，被试回答完问题或持续时间超过5秒后，开始下一次音频播放。根据音频的内容，可以分为单词实验、句子实验和段落实验。
-				<br>
-				<br>
-				<h2 style="color: #1293EE;">
-					Subjects
-				</h2>
-				<!-- 14 subjects’ EEG data were recorded in the database, but one of them had a problem with the data label, 
+                    被试在每次实验中都需要听一些音频，每段音频对应着一次数据记录。在每次试验开始前，受试者需要进行一段时间的冥想以保持接下来的精力集中。
+                    实验开始之后，屏幕首先会呈现一个注视点，它提醒受试者有一段音频即将播放。音频在注视点出现1秒后开始播放。然后受试者开始根据音频内容回答问题，
+                    回答问题的时间设置为5秒，被试回答完问题或持续时间超过5秒后，开始下一次音频播放。根据音频的内容，可以分为单词实验、句子实验和段落实验。
+                    <br>
+                    <br>
+                    <h2 style="color: #1293EE;">
+                        Subjects
+                    </h2>
+                    <!-- 14 subjects’ EEG data were recorded in the database, but one of them had a problem with the data label, 
 				so there were only 13 subjects is valid data. Their ages ranged from 21 to 35 years old (Mean=24.5, Standard Deviation=3.84),
 				including 5 males and 8 females. All the subjects have bachelor’s degree or above, including 3 undergraduate students, 
 				7 master’s degree students and 3 doctor’s degree students. All the subjects are right-handed, 
 				without intellectual or hearing impairment, and all of them are Chinese. -->
-				数据库中记录了14名受试者的脑电数据，但其中一名受试者的数据标签存在问题，因此只有13名受试者是有效数据。
-				受试者的年龄在21 ~ 35岁，平均24.5岁，标准差3.84岁，其中5名男性，8名女性。所有受试者均具有本科及以上学历，其中本科生3人，硕士研究生7人，博士研究生3人。
-				所有受试者均为右撇子，无智力或听力障碍，且均为中国人。
-				<br>
-				<br>
-				<h2 style="color: #1293EE;">
-					Dataset Summary
-				</h2>
-				下载数据集解压之后可以得到Audio_Confuse_Dataset文件夹，在该文件夹中包含14个从1-14编号的子文件夹，
-				分别存储14名受试者的数据。除此之外，文件夹中还有一个被试编码表文件，该文件记录了14名受试者的相关信息，
-				姓名和学号等敏感信息已经被提前删除。</br>
-				以子文件夹1为例，在该文件夹下包含另外三个子文件夹，分别是：EEG、E-prime和质询。</br>
-				其中EEG中存放了三段txt文件，命名为subject_id-1.txt, subject_id-2.txt, subject_id-3.txt, 1.txt是在做单词音频诱发实验时采集的脑电数据，2.txt和3.txt是句子和段落做诱发实验时采集到的脑电数据。
-				在txt文件中，前6行记录本次采集的相关信息，包括采样率相关内容，第7行开始正式记录脑电数据，每行脑电记录有11列，第1列是采样索引，最后一列是时间戳，倒数第二列是标记该时间点有无事件发生。如果是25120
-				表示发生了新事件。2-9列是记录的Fp1、Fp2、C3、C4、T5、T6、O1、O2八通道的脑电信号。通道位置符合下图所示10-20国际标准导联系统。</br>
-				E-prime文件夹下有6个子文件，分别是：wordExp-subject_id-1.txt，wordExp-subject_id-1.edat2，sentExp-subject_id-2.txt，sentExp-subject_id-2.edat2，
-				paraExp-subject_id-3.txt，paraExp-subject_id-3.edat2，分别记录了受试者在回答不同问题时的回答情况。.edat2文件和.txt文件区别在于.edat2文件
-				是记录的原始文件，只能通过E-prime软件直接打开，但是查看相关信息更直观，.txt打开方便但是不方便查看相关信息。通过每条回答下边Options.RESP、Options.CRESP和Options.ACC三个属性
-				可以确定对该段脑电信号记录的标签。其中Options.RESP是受试者回答的选项，Options.CRESP是正确答案的选项，Options.ACC是这道题受试者有没有回答正确。如果受试者回答正确，则该段脑电信号被标记为unconfused,
-				否则标记为confused。由于在每次实验开始前，受试者会被要求进行一段时间的冥想，这段时间的脑电记录被标记为calm。</br>
-				在质询文件夹下同样有三个文件，分别是subject_id-表格-单词质询.xlsx，subject_id-文档-单句质询.docx，subject_id-文档-段落质询.docx，分别表示用于诱发受试者情绪的相关质询内容和顺序。</br>
-				总体文件结构如下所示：</br>
-				Audio_Confuse_Dataset</br>
-				└─</br>
-				├─EEG</br>
-				├─subject_id-1.txt</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-2.txt</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-3.txt</br>
-				├─E-prime</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.txt</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.edat2</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.txt</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.edat2</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.txt</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.edat2</br>
-				├─质询</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-表格-单词质询.docx</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-单句质询.docx</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-段落质询.docx</br>
-				<br>
-				<br>
-				<img src="./resource/img/10-20system.png" class="img-fluid"/>
-				<br>
-				<br>
-				<h2 style="color: #1293EE;">
-					Download
-				</h2>
-				<br>
-				<br>
-				<h2 style="color: #1293EE;">
-					References
-				</h2>
-			</div>
-			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
-				<div id="toc-container" class="post-toc">
-					<div class="toc"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    数据库中记录了14名受试者的脑电数据，但其中一名受试者的数据标签存在问题，因此只有13名受试者是有效数据。
+                    受试者的年龄在21 ~ 35岁，平均24.5岁，标准差3.84岁，其中5名男性，8名女性。所有受试者均具有本科及以上学历，其中本科生3人，硕士研究生7人，博士研究生3人。
+                    所有受试者均为右撇子，无智力或听力障碍，且均为中国人。
+                    <br>
+                    <br>
+                    <h2 style="color: #1293EE;">
+                        Dataset Summary
+                    </h2>
+                    下载数据集解压之后可以得到Audio_Confuse_Dataset文件夹，在该文件夹中包含14个从1-14编号的子文件夹，
+                    分别存储14名受试者的数据。除此之外，文件夹中还有一个被试编码表文件，该文件记录了14名受试者的相关信息，
+                    姓名和学号等敏感信息已经被提前删除。</br>
+                    以子文件夹1为例，在该文件夹下包含另外三个子文件夹，分别是：EEG、E-prime和质询。</br>
+                    其中EEG中存放了三段txt文件，命名为subject_id-1.txt, subject_id-2.txt, subject_id-3.txt,
+                    1.txt是在做单词音频诱发实验时采集的脑电数据，2.txt和3.txt是句子和段落做诱发实验时采集到的脑电数据。
+                    在txt文件中，前6行记录本次采集的相关信息，包括采样率相关内容，第7行开始正式记录脑电数据，每行脑电记录有11列，第1列是采样索引，最后一列是时间戳，倒数第二列是标记该时间点有无事件发生。如果是25120
+                    表示发生了新事件。2-9列是记录的Fp1、Fp2、C3、C4、T5、T6、O1、O2八通道的脑电信号。通道位置符合下图所示10-20国际标准导联系统。</br>
+                    E-prime文件夹下有6个子文件，分别是：wordExp-subject_id-1.txt，wordExp-subject_id-1.edat2，sentExp-subject_id-2.txt，sentExp-subject_id-2.edat2，
+                    paraExp-subject_id-3.txt，paraExp-subject_id-3.edat2，分别记录了受试者在回答不同问题时的回答情况。.edat2文件和.txt文件区别在于.edat2文件
+                    是记录的原始文件，只能通过E-prime软件直接打开，但是查看相关信息更直观，.txt打开方便但是不方便查看相关信息。通过每条回答下边Options.RESP、Options.CRESP和Options.ACC三个属性
+                    可以确定对该段脑电信号记录的标签。其中Options.RESP是受试者回答的选项，Options.CRESP是正确答案的选项，Options.ACC是这道题受试者有没有回答正确。如果受试者回答正确，则该段脑电信号被标记为unconfused,
+                    否则标记为confused。由于在每次实验开始前，受试者会被要求进行一段时间的冥想，这段时间的脑电记录被标记为calm。</br>
+                    在质询文件夹下同样有三个文件，分别是subject_id-表格-单词质询.xlsx，subject_id-文档-单句质询.docx，subject_id-文档-段落质询.docx，分别表示用于诱发受试者情绪的相关质询内容和顺序。</br>
+                    总体文件结构如下所示：</br>
+                    Audio_Confuse_Dataset</br>
+                    └─</br>
+                    ├─EEG</br>
+                    ├─subject_id-1.txt</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-2.txt</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-3.txt</br>
+                    ├─E-prime</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.txt</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─wordExp-subject_id-1.edat2</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.txt</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─sentExp-subject_id-2.edat2</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.txt</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─paraExp-subject_id-2.edat2</br>
+                    ├─质询</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-表格-单词质询.docx</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-单句质询.docx</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├─subject_id-文档-段落质询.docx</br>
+                    <br>
+                    <br>
+                    <img src="./resource/img/10-20system.png" class="img-fluid" />
+                    <br>
+                    <br>
+                    <h2 style="color: #1293EE;">
+                        Download
+                    </h2>
+                    <br>
+                    <br>
+                    <h2 style="color: #1293EE;">
+                        References
+                    </h2>
+                </div>
+                <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
+                    <div id="toc-container" class="post-toc">
+                        <div class="toc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-	<footer class="blockquote text-center">
-	<dir class="row">
-		<div class="col-md-12 ">
-			<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
 
-			<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-					style="display: inline-block">LastYear</div></small>
-		</div>
-	</dir>
-</footer>
+        <div class="bottomPage container-fluid">
+            <footer class="col-md-12">
+                <div class="bottomContent">
+                    <div class="contactInfo">
+                        <p>邮箱：xutao@nwpu.edu.cn</p>
+                        <p>地址：陕西省西安市西北工业大学（长安校区）软件学院 启祥楼4楼</p>
+                    </div>
+                    <div style="margin-right: 150px;text-align: center;">
+                        <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
+
+                        <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                                style="display: inline-block">LastYear
+                            </div></small>
+                    </div>
+                </div>
+                <div></div>
+            </footer>
+        </div>
+    </div>
+
+
+
 
 </body>
 
 <script language="javascript" type="text/javascript">
-	add_head_id();
+    add_head_id();
 
-	tocify();
+    tocify();
 
-	footer_year();
+    footer_year();
 </script>
 
 

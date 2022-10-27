@@ -1,132 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <title>Description</title>
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- 引用自己的库 -->
-	<link rel="stylesheet" href="../../resource/css/cite.css">
-	<script src="../../resource/js/cite.js"></script>
-	<link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
+    <!-- 引用自己的库 -->
+    <link rel="stylesheet" href="../../resource/css/cite.css">
+    <script src="../../resource/js/cite.js"></script>
+    <link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
 
-	<!-- 3.6.0最新 -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- 3.6.0最新 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-	<!-- bootstrap 4.6.0 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-	<!-- tocbot 4.12.3 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
-	<script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+
+    <!-- tocbot 4.12.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light site-header" style="background-color: #B4C6E7; ">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-		aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
 
-	<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-		<ul class="navbar-nav">
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="../../resource.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="../../resource/img/nwpu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
+<body style="font-family: '微软雅黑';background-color: rgb(245,247,255);">
 
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="index.html">Home</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="readme.html">Description</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary">
-				<a class="nav-link" href="download.html">Download</a>
-			</li>
-			<li class="nav-item btn btn-outline-primary" style="padding: 0px;">
-				<a class="nav-link" href="../../resource.html" aria-label="回到主页" style="margin: 0px; padding: 0px;">
-					<img src="../../resource/img/snnu.png"
-						style="width:64px; height:64px; border-radius:100%; overflow:hidden;" />
-				</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+    <div class="page">
+        <div class="top">
+            <div class="logo">
+                <img src="../../resource/img/logo.png" alt="智能感知交互实验室">
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-expand-lg navbar-light site-header">
+
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../index.html">首页</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../index.html">新闻动态</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../research.html">研究领域</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../member.html">人员组成</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" style="color: white;" href="../../resource.html">项目资源</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <br> -->
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-8 js-toc-content" style="font-size: 1em;">
+
+                    <h2 style="color: #1293EE; ">
+                        Stimuli and Experiment
+                    </h2>
+                    We use the Raven's Advanced Progressive Matrices as a visual stimulus for the participants,
+                    containing 48
+                    reasoning questions.
+
+                    The experiment is shown in the Fig:
+                    <img src="./resource/img/collection.png" class="img-fluid"">
+        	
+        				Participants have 15 seconds to answer each question  within the answering time, they need to press the key corresponding to 
+        				the question option preset in the program to complete the question, and then automatically enter the answering link of the 
+        				next question. After all 48 reasoning questions are answered, the experiment ends.We simultaneously record the participants' 
+        				facial video, screen content video, and eye gaze data during question answering. In addition, we mark the time stamps and 
+        				frame sequences at the beginning and end of each question, which can be used to segment the video and eye gaze data to form 
+        				participants' independent data about each question.
+        				<br>
+        				<br>
+        				<h2 style=" color: #1293EE;">
+                    Dataset Summary
+                    </h2>
+                    In the RavenGaze dataset from 34 participants, 18 women and 16 men, 22 wear glasses during the
+                    experiment
+                    and 12 do not.
+                    Data are collected under well-lighted indoor conditions. The answering time of each participant is 8
+                    to 11
+                    minutes.
+                    Excluding the data of 3 participants due to incomplete data, the total duration of the facial video
+                    in the
+                    entire dataset
+                    is 309 minutes (30Hz), with a total of 556,476 frames of facial images. And the resolution of each
+                    face
+                    image is 640×480.
+
+                    <img src="./resource/img/densityHeatMap.png" class="img-fluid" />
+                    <br>
+                    <br>
+                    The angle range of the horizontal direction is (-10°, +10°), and the angle of the vertical direction
+                    is
+                    (-12°, 12°).
+
+                </div>
+
+                <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
+                    <div id="toc-container" class="post-toc">
+                        <div class="toc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<body style="font-family: '微软雅黑';">
 
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
+        <div class="bottomPage container-fluid">
+            <footer class="col-md-12">
+                <div class="bottomContent">
+                    <div class="contactInfo">
+                        <p>邮箱：xutao@nwpu.edu.cn</p>
+                        <p>地址：陕西省西安市西北工业大学（长安校区）软件学院 启祥楼4楼</p>
+                    </div>
+                    <div style="margin-right: 150px;text-align: center;">
+                        <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
 
-			</div>
-			<div class="col-8 js-toc-content" style="font-size: 1em;">
+                        <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                                style="display: inline-block">LastYear
+                            </div></small>
+                    </div>
+                </div>
+                <div></div>
+            </footer>
+        </div>
+    </div>
 
-				<h2 style="color: #1293EE; ">
-					Stimuli and Experiment
-				</h2>
-				We use the Raven's Advanced Progressive Matrices as a visual stimulus for the participants, containing 48 reasoning questions. 
-				
-				The experiment is shown in the Fig:
-				<img src="./resource/img/collection.png" class="img-fluid"">
-	
-				Participants have 15 seconds to answer each question  within the answering time, they need to press the key corresponding to 
-				the question option preset in the program to complete the question, and then automatically enter the answering link of the 
-				next question. After all 48 reasoning questions are answered, the experiment ends.We simultaneously record the participants' 
-				facial video, screen content video, and eye gaze data during question answering. In addition, we mark the time stamps and 
-				frame sequences at the beginning and end of each question, which can be used to segment the video and eye gaze data to form 
-				participants' independent data about each question.
-				<br>
-				<br>
-				<h2 style="color: #1293EE;">
-					Dataset Summary
-				</h2>
-				In the RavenGaze dataset from 34 participants, 18 women and 16 men, 22 wear glasses during the experiment and 12 do not.
-				Data are collected under well-lighted indoor conditions. The answering time of each participant is 8 to 11 minutes. 
-				Excluding the data of 3 participants due to incomplete data, the total duration of the facial video in the entire dataset
-				is 309 minutes (30Hz), with a total of 556,476 frames of facial images. And the resolution of each face image is 640×480.
-					
-				<img src="./resource/img/densityHeatMap.png" class="img-fluid"/>
-				<br>	
-				<br>	
-				The angle range of the horizontal direction is (-10°, +10°), and the angle of the vertical direction is (-12°, 12°).
 
-			</div>
 
-			<div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
-				<div id="toc-container" class="post-toc">
-					<div class="toc"></div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<footer class="blockquote text-center">
-	<dir class="row">
-		<div class="col-md-12 ">
-			<small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-
-			<small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-					style="display: inline-block">LastYear</div></small>
-		</div>
-	</dir>
-	</footer>
-	
 </body>
 
 <script language="javascript" type="text/javascript">
-	add_head_id();
+    add_head_id();
 
-	tocify();
+    tocify();
 
-	footer_year();
+    footer_year();
 </script>
+
 
 </html>

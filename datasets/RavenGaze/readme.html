@@ -67,48 +67,76 @@
 
                 </div>
                 <div class="col-8 js-toc-content" style="font-size: 1em;">
-
+                    <br>
                     <h2 style="color: #1293EE; ">
                         Stimuli and Experiment
                     </h2>
-                    We use the Raven's Advanced Progressive Matrices as a visual stimulus for the participants,
-                    containing 48
-                    reasoning questions.
-
-                    The experiment is shown in the Fig:
-                    <img src="./resource/img/collection.png" class="img-fluid"">
-        	
-        				Participants have 15 seconds to answer each question  within the answering time, they need to press the key corresponding to 
-        				the question option preset in the program to complete the question, and then automatically enter the answering link of the 
-        				next question. After all 48 reasoning questions are answered, the experiment ends.We simultaneously record the participants' 
-        				facial video, screen content video, and eye gaze data during question answering. In addition, we mark the time stamps and 
-        				frame sequences at the beginning and end of each question, which can be used to segment the video and eye gaze data to form 
-        				participants' independent data about each question.
-        				<br>
-        				<br>
-        				<h2 style=" color: #1293EE;">
-                    Dataset Summary
+                    <br>
+                    We used the 48-question from Raven Progressive Matrices (RPM) as the subject's visual stimuli. In
+                    addition, to ensure
+                    subjects are not distracted as much as possible during the task time, we set answer time for
+                    questions(15s) shorter than
+                    the average time to work out the questions. The procedure of the experiment is shown in Fig.1
+                    <img src="./resource/img/1-experiment procedure.png" class="img-fluid" style="padding-top:10px ;">
+                    <p style="text-align: center;padding-top: 8px;">Fig. 1. The procedure of experiment </p>
+                    Before each subject starts the investigation, first, the eye tracker is calibrated the gaze of the
+                    current subject to
+                    reduce the gaze error of the collection process. Then ten landscape pictures help the subject calm
+                    down and enter the
+                    test state. After that, it begins the test, which includes 48 questions. We set each question to
+                    have a maximum
+                    answering time of 15 seconds. The subject must press the button corresponding to the answer option
+                    preset by the program
+                    within the answering time to complete the question and automatically jump to the next question. If
+                    the subject does not
+                    meet the answer within the set time, it will automatically jump to the next question. Before jumping
+                    to the next
+                    question, a calibration break is set to ensure high-quality gaze data. It is a fixation point that
+                    appeared in the
+                    center of the screen for 0.5 seconds, and subjects were asked to focus on this fixation point as
+                    much as possible.
+                    During the answering process, the program simultaneously records the facial video, screen video, and
+                    eye movement data
+                    of each subject during completing the 48 reasoning questions.
+                    <img src="./resource/img/2-Experiment setting.png" class="img-fluid" style="padding-top:10px ;">
+                    <p style="text-align: center;padding-top: 8px;">Fig. 2. Experiment setting</p>
+                    The experiment setting is shown in Fig. 2, and the visual stimuli materials are displayed on a
+                    27-Inch monitor. The
+                    subjects’ videos are captured from a commercial webcam fixed on the top of the screen. Logitech C270
+                    HD Webcam is
+                    chosen, since it is one of low-cost and most widely used webcam, supporting 1280 × 720 video
+                    recording with
+                    lightcorrection technology.
+                    <br>
+                    <br>
+                    <h2 style=" color: #1293EE;">
+                        Dataset Summary
                     </h2>
-                    In the RavenGaze dataset from 34 participants, 18 women and 16 men, 22 wear glasses during the
-                    experiment
-                    and 12 do not.
-                    Data are collected under well-lighted indoor conditions. The answering time of each participant is 8
-                    to 11
-                    minutes.
-                    Excluding the data of 3 participants due to incomplete data, the total duration of the facial video
-                    in the
+                    We collected gaze data from a total of 34 subjects(18 female and 16 male), with 22 wearing glasses
+                    and 12 having normal
+                    vision. Three subjects' gaze data were screened out due to improper experimental operation. The data
+                    were collected
+                    under well-lit indoor conditions, where the sampling rate of face video was 30Hz, and the sampling
+                    rate of Tobii Pro
+                    Nano eye tracker was 60Hz. The time for each subject to complete RMP test is about 8-11 minutes. The
                     entire dataset
-                    is 309 minutes (30Hz), with a total of 556,476 frames of facial images. And the resolution of each
-                    face
-                    image is 640×480.
+                    contains 31 subjects' facial videos with a total length of 309 minutes. There are 556,476 images in
+                    total, some face
+                    image examples are shown in Fig.3.
 
-                    <img src="./resource/img/densityHeatMap.png" class="img-fluid" />
-                    <br>
-                    <br>
+                    <img src="./resource/img/3-face image.png" class="img-fluid" style="padding-top:10px ;">
+                    <p style="text-align: center;padding-top: 8px;">Fig. 3. Face image from the dataset</p>
+
+                    <img src="./resource/img/4-densityHeatMap.png" class="img-fluid" style="padding-top:10px ;">
+                    <p style="text-align: center;padding-top: 8px;">Fig. 4. Gaze angle and gaze point distribution</p>
                     The angle range of the horizontal direction is (-10°, +10°), and the angle of the vertical direction
-                    is
-                    (-12°, 12°).
-
+                    is (-12°, 12°),
+                    which is smaller than another gaze dataset. It also means that RavenGaze places higher demands on
+                    the recognition
+                    algorithms.
+                    <br>
+                    <br>
+                    <br>
                 </div>
 
                 <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">

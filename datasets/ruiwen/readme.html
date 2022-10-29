@@ -33,40 +33,28 @@
     <div class="page">
         <div class="top">
             <div class="logo">
-                <img src="../../resource/img/logo.png" alt="智能感知交互实验室">
+                <a href="../../index.html">
+                    <img src="../../resource/img/logo.png" alt="智能感知交互实验室">
+                </a>
             </div>
-            <!-- 导航条 -->
-            <nav class="navbar navbar-expand-lg navbar-light site-header">
 
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-                    <ul class="navbar-nav">
-                        <li class="nav-item btn">
-                            <a class="nav-link" style="color: white;" href="../../index.html">首页</a>
-                        </li>
-                        <li class="nav-item btn">
-                            <a class="nav-link" style="color: white;" href="../../index.html">新闻动态</a>
-                        </li>
-                        <li class="nav-item btn">
-                            <a class="nav-link" style="color: white;" href="../../research.html">研究领域</a>
-                        </li>
-                        <li class="nav-item btn">
-                            <a class="nav-link" style="color: white;" href="../../member.html">人员组成</a>
-                        </li>
-                        <li class="nav-item btn">
-                            <a class="nav-link" style="color: white;" href="../../resource.html">项目资源</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
             <!-- <br> -->
         </div>
-
+        <!-- 导航条 -->
+        <nav class="site-header sticky-top py-0">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a class="py-2 d-none d-md-inline-block" href="../../index.html">首页</a>
+                <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
+                <a class="py-2 d-none d-md-inline-block" href="download.html">Download</a>
+                <a class="py-2 d-none d-md-inline-block" href="readme.html">ReadMe</a>
+            </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-2">
 
                 </div>
-                <div class="col-8 js-toc-content" style="font-size: 1em;">
+                <div class="col-8 js-toc-content text-justify" style="font-size: 1em;">
 
                     <h2 style="color: #1293EE; ">
                         Stimuli and Experiment
@@ -74,21 +62,21 @@
                     我们使用瑞文高级推理实验作为受试者的视觉刺激材料，诱导受试者产生不同的情绪，同时采集相对应的脑电信号，瑞文测试共包含48个推理问题。
                     本次实验所用实验范式如下图所示。
                     <br>
-                    <img src="./resource/img/流程图.jpg" class="img-fluid"">
-        				<br>
-        				
-        				<br>
-        				
-        				受试者进行实验时，屏幕首先会呈现一段关于本次实验的相关介绍。介绍完成之后会进入实验的第一阶段，屏幕上会随机呈现10张与本次实验无关的风景图片，每次呈现10s。
-        				在每次图片呈现之前，屏幕会出现注视点提醒图像即将被呈现。该阶段被记录的脑电数据被标记为relax。
-        				风景图像结束之后，将会进入实验的第二阶段。在第二阶段，屏幕会随机呈现48道瑞文测试题目的图片，每张题目呈现15s，受试者可以按相应的键盘字母来选择自己认为正确的
-        				题目答案，15s过后或者受试者答题完成之后，播放下一张测试图片。
-        				在实验开始、风景图片呈现、每次注视点出现、瑞文测试图片出现和实验结束时均设置了标记进行标识。
-        
-        				<br>
-        				<br>
-        				<h2 style=" color: #1293EE;">
-                    Subjects
+                    <img src="./resource/img/流程图.jpg" class="img-fluid">
+                    <br>
+
+                    <br>
+
+                    受试者进行实验时，屏幕首先会呈现一段关于本次实验的相关介绍。介绍完成之后会进入实验的第一阶段，屏幕上会随机呈现10张与本次实验无关的风景图片，每次呈现10s。
+                    在每次图片呈现之前，屏幕会出现注视点提醒图像即将被呈现。该阶段被记录的脑电数据被标记为relax。
+                    风景图像结束之后，将会进入实验的第二阶段。在第二阶段，屏幕会随机呈现48道瑞文测试题目的图片，每张题目呈现15s，受试者可以按相应的键盘字母来选择自己认为正确的
+                    题目答案，15s过后或者受试者答题完成之后，播放下一张测试图片。
+                    在实验开始、风景图片呈现、每次注视点出现、瑞文测试图片出现和实验结束时均设置了标记进行标识。
+
+                    <br>
+                    <br>
+                    <h2 style=" color: #1293EE;">
+                        Subjects
                     </h2>
                     数据库中记录了34名受试者的脑电数据。
                     受试者的年龄在21 ~ 35岁，平均24.5岁，标准差3.84岁，其中16名男性，18名女性。所有受试者均具有本科及以上学历。
@@ -105,10 +93,8 @@
                     每个受试者子文件夹包含两个文件夹：eeg文件夹里面存放的为被试的脑电数据，其中trigger1标志实验开始Instruction1的呈现，trigger2表示每张风景图片的呈现时间点，
                     trigger3标志fixation的出现，trigger4标志瑞文图片的出现，trigger5标志实验结束。behavior文件夹是被试做实验期间的行为数据。脑电数据使用BrainVision数据格式记录，所以每个
                     eeg文件夹中包含三个文件0000_subjectid.eeg, 0000_subjectid.vhbr,
-                    0000_subjectid.vmrk。.eeg是一个二进制文件记录脑电的电压值，.vmrk是包含数据中事件信息的文本标记文件，
-                    .vhdr是包含元数据的文本头文件。可以使用python或者matlab来打开这些文件。本次实验总共记录了31个通道的脑电信号，分别是：'Fp1','F3','F7','FT9','FC5','FC1','C3','T7','TP9','CP5','CP1',
-                    'Pz','P3','P7','O1','Oz','O2','P4','P8','TP10','CP6','CP2','Cz','C4',
-                    'T8','FT10','FC6','FC2','F4','F8','Fp2'。通道位置符合国际10-20导联标准。</br>
+                    0000_subjectid.vmrk。.eeg是一个二进制文件记录脑电的电压值，.vmrk是包含数据中事件信息的文本标记文件，.vhdr是包含元数据的文本头文件。可以使用python或者matlab来打开这些文件。本次实验总共记录了31个通道的脑电信号，分别是：'Fp1','F3','F7','FT9','FC5','FC1','C3','T7','TP9','CP5','CP1','Pz','P3','P7','O1','Oz','O2','P4','P8','TP1
+                    0','CP6','CP2','Cz','C4','T8','FT10','FC6','FC2','F4','F8','Fp2'。通道位置符合国际10-20导联标准。</br>
                     一个类别文件class_all.csv，表示每个受试者每段瑞文测试脑电信号对应的情绪标签。其中1是困惑，2是猜测，3是不困惑，4是think-right。每个标签由答题准确率1和后测结果两个维度得出。
                     如下图所示：
                     <br>
@@ -135,24 +121,21 @@
 
 
 
-        <div class="bottomPage container-fluid">
-            <footer class="col-md-12">
-                <div class="bottomContent">
-                    <div class="contactInfo">
-                        <p>邮箱：xutao@nwpu.edu.cn</p>
-                        <p>地址：陕西省西安市西北工业大学（长安校区）软件学院 启祥楼4楼</p>
-                    </div>
-                    <div style="margin-right: 150px;text-align: center;">
-                        <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-
-                        <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-                                style="display: inline-block">LastYear
-                            </div></small>
-                    </div>
+        <footer class="bottomPage container-fluid">
+            <div class="col-md-10 bottomContent">
+                <div class="col-md-5">
+                    <p>邮箱：xutao@nwpu.edu.cn</p>
+                    <p>地址：西安市长安区东祥路1号</p>
                 </div>
-                <div></div>
-            </footer>
-        </div>
+                <div style="text-align: center;float: inline-end;" class="col-md-6">
+                    <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
+
+                    <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                            style="display: inline-block">LastYear
+                        </div></small>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

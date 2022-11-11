@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-<title>Download</title>
+<title>RavenEEG</title>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- 引用自己的库 -->
-    <link rel="stylesheet" href="../../resource/css/cite.css">
-    <script src="../../resource/js/cite.js"></script>
-    <link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
-
     <!-- 3.6.0最新 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-    <!-- bootstrap 4.6.0 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.6.1 -->
+    <link rel="stylesheet" href="../../resource/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../resource/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
     <!-- tocbot 4.12.3 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.css">
     <script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script>
+    <!-- 引用自己的库 -->
+    <link rel="stylesheet" href="../../resource/css/cite.css">
 
+    <script src="../../resource/js/cite.js"></script>
+    <link rel="shortcut icon" href="../../resource/img/eeg-icon-black.svg">
 </head>
 
 
-<body style="font-family: '微软雅黑';background-color: rgb(245,247,255);">
+<body style="font-family: '微软雅黑';background-color: #f5f7fa;">
 
-    <div class="page">
-        <div class="top">
-            <div class="logo">
+    <div class="container">
+        <div class="row">
+            <div>
                 <a href="../../index.html">
-                    <img src="../../resource/img/logo.png" alt="智能感知交互实验室">
+                    <img src="../../resource/img/logo2.png" alt="" class="img-fluid">
                 </a>
             </div>
-
-            <!-- <br> -->
         </div>
-        <!-- 导航条 -->
-        <nav class="site-header sticky-top py-0">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <a class="py-2 d-none d-md-inline-block" href="../../index.html">首页</a>
-                <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
-                <a class="py-2 d-none d-md-inline-block" href="download.html">Download</a>
-                <a class="py-2 d-none d-md-inline-block" href="readme.html">ReadMe</a>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
+    </div>
 
-                </div>
-                <div class="col-8 js-toc-content text-justify" style="font-size: 1em;">
-                    <h2>
-                        Dataset access
-                    </h2>
+
+    <nav class="nav navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-12">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item col-md-3">
+                        <a class="nav-link" href="../../index.html">首页</span></a>
+                    </li>
+                    <li class="nav-item col-md-3">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item active col-md-3">
+                        <a class="nav-link" href="download.html">DownLoad</a>
+                    </li>
+                    <li class="nav-item  col-md-3">
+                        <a class="nav-link" href="readme.html">Readme</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-8 js-toc-content text-justify" style="font-size: 1em;margin-top: 20px;">
+                <h2>
+                    Dataset access
+                </h2>
+                <p class="text-justify">
                     To gain access to the dataset and download the files on this page, please download the license
                     agreement
                     below.
                     The license agreement should be printed, signed, scanned and returned via email to <a
-                        href="mailto:intellinteraclab@163.com" style="color: #F05A00;">intellinteraclab@163.com</a> with
-                    the
-                    subject of "RuiWen account request".
+                        href="mailto:xutao@nwpu.edu.cn" style="color: #F05A00;">xutao@nwpu.edu.cn</a> with the subject
+                    of
+                    "RavenGaze account request".
                     Upon receipt, a username, a password and a download link will be sent to download the data files
                     below.
-                    <br>
-                    <br>
-                    <a href="../../resource/license/license_audio_confuse.pdf" style="color: #F05A00;">The License
-                        Agreement</a>
+                </p>
+                <br>
+                <a href="../../resource/license/license_RavenGaze.pdf" style="color: #F05A00;">The License
+                    Agreement</a>
 
-                </div>
-                <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
-                    <div id="toc-container" class="post-toc">
-                        <div class="toc"></div>
-                    </div>
+            </div>
+            <div class="col-mb-12 col-2 kit-hidden-tb post-toc-content">
+                <div id="toc-container" class="post-toc">
+                    <div class="toc"></div>
                 </div>
             </div>
         </div>
-
-        <footer class="bottomPage container-fluid">
-            <div class="col-md-10 bottomContent">
-                <div class="col-md-5">
-                    <p>邮箱：xutao@nwpu.edu.cn</p>
-                    <p>地址：西安市长安区东祥路1号</p>
-                </div>
-                <div style="text-align: center;float: inline-end;" class="col-md-6">
-                    <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
-
-                    <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
-                            style="display: inline-block">LastYear
-                        </div></small>
-                </div>
-            </div>
-        </footer>
     </div>
+    <div style="height: 300px;">
+        <br>
+    </div>
+    <footer class="container-fluid" id="footer">
+        <div class="row bottomPage">
+            <div class="col-6 text-white text-center mt-3">
+                <p class="small">邮箱：xutao@nwpu.edu.cn</p>
+                <p class="small">地址：西安市长安区东祥路1号</p>
+            </div>
+            <div class="col-6 text-center mt-3">
+                <small class="d-block mb-3 text-muted">Intelligent Interaction Laboratory @ NWPU</small>
 
+                <small class="d-block mb-3 text-muted">All Rights Reserved © 2019-<div id="year"
+                        style="display: inline-block">
+                        LastYear
+                    </div></small>
+            </div>
 
+        </div>
+
+    </footer>
 
 
 </body>
+
 
 <script language="javascript" type="text/javascript">
     add_head_id();

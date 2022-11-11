@@ -5,27 +5,8 @@
 /*
 * Custom translucent site header
 */
-
-div {
-    display: block;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.top {
-    max-width: 100%;
-    margin: 0 auto;
-    position: static;
-    /*固定logo和menu*/
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
+#nav {
+    background-color: #034bb9;
 }
 
 .logo {
@@ -102,33 +83,24 @@ body {
 
 .card-tit {
     color: rgb(3, 75, 185);
-    font-size: 1.4em;
+    font-size: calc(0.8em + 0.3vw);
     font-weight: 600;
-    padding-left: 15px;
-    padding-bottom: 3px;
 }
 
 .learnMore {
-    justify-content: flex-end;
-    color: #666;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-right: 11px;
-    float: right;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card-text {
-    margin-top: 10px;
+    font-size: 0.7em;
+    font-weight: 0;
 }
 
 .brief {
     display: flex;
     color: #666;
     font-size: 14px;
-    margin: 6.5px 0;
+}
+
+#news {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .news-i {
@@ -171,26 +143,21 @@ a.news-link-i:hover {
     float: right;
 }
 
+#member{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#member .row .card .card-body .figure .figure-caption h5{
+    font-size: calc(0.8em + 0.3vw);
+}
 /* footer */
-.bottomPage {
-    width: 100%;
-    max-width: 100%;
-    height: 157px;
-    background-color: #333;
-    margin: 20px 0 20px 0;
-    /* align-items: center; */
+#footer {
+    margin-top: 50px;
 }
 
-.bottomContent {
-    /* margin: 0 100px; */
-    margin-left: 150px;
-    line-height: 40px;
-    padding-top: 25px;
-    color: #fff;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.bottomPage {
+    background-color: #333;
+    /* align-items: center; */
 }
 
 
@@ -218,6 +185,7 @@ ref: https://fuerain.ink/archives/handsome-modify-record.html#anchor-6
         display: inline-block;
         text-align: left;
         padding-left: 10px;
+        margin-top: 80px;
         /* overflow-y: hidden; */
     }
 }

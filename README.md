@@ -1,6 +1,6 @@
 # [智能交互Lab](https://intelligentinteractivelab.github.io/)
 - 西北工业大学软件学院
-- 智能交互实验室主页
+- 智能感知交互实验室主页
 
 该仓库已经废用，新的网站页面地址依然是https://intelligentinteractivelab.github.io/
 
